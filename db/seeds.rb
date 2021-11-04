@@ -19,3 +19,9 @@ mj.songs << thriller
 
 pop.songs << thriller
 rap.songs << hotline_bling
+
+genre = Genre.create(name: "Hip Hop")
+genre.artists << Artist.create(name: "MJ")
+genre.artists << Artist.create(name: "Adele")
+genre.artists << Artist.create(name: "James Brown")
+genre.save
